@@ -1,0 +1,25 @@
+[package]
+name = "caterpillar"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.76.0"
+
+
+[[bin]]
+name = "worm2"
+path = "worm2/main.rs"
+
+[[bin]]
+name = "worm3"
+path = "worm3/main.rs"
+
+[[bin]]
+name = "worm4"
+path = "worm4/main.rs"
+
+
+[dependencies]
+egui   = "0.26.2"
+eframe = "0.26.2"
+rand   = "0.8.5"
+ears   = "0.8.0"
