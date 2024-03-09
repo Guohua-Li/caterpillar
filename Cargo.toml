@@ -17,6 +17,9 @@ path = "worm3/main.rs"
 name = "worm4"
 path = "worm4/main.rs"
 
+[[bin]]
+name = "worm5"
+path = "worm5/main.rs"
 
 [dependencies]
 egui   = "0.26.2"
