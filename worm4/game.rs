@@ -130,7 +130,10 @@ impl Game {
             if push {
                 let letter: Option<char> = if id < 3 { self.char_stack.pop() } else { None };
                 let tag_pos = Vec2 { x: x - 0.8 * HEAD_SIZE, y: y };
-                let food = Food { id, pos: position, tag: letter, tag_pos };
+                let food = Food {
+                    //id,
+                    pos: position, tag: letter, tag_pos
+                };
                 self.foods.push(food);
                 id += 1;
             }

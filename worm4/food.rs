@@ -25,7 +25,7 @@ const CENTER:    Align2  = Align2::CENTER_CENTER;
 
 #[derive(Default)]
 pub struct Food {
-    pub id:      usize,
+    //pub id:      usize,
     pub pos:     Vec2,
     pub tag:     Option<char>,
     pub tag_pos: Vec2
