@@ -25,7 +25,7 @@ pub struct Unit {
     pub velocity: Vec2,
     pub letter:   char,
     pub l0:       f32,
-    pub radius:   f32,
+    //pub radius:   f32,
     pub color:    Color32,
 }
 
@@ -36,7 +36,7 @@ impl Default for Unit {
             velocity: vec2(0.5, 0.0),
             letter:   ' ',
             l0:       L0_UNIT,
-            radius:   R_UNIT,
+            //radius:   R_UNIT,
             color:    Color32::GREEN,
         }
     }

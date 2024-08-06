@@ -22,6 +22,6 @@ fn main() -> Result<(), eframe::Error> {
     eframe::run_native(
         "Worm",
         options,
-        Ok(Box::new(|cc| Box::new(Game::new(cc))))
+        Box::new(|cc| Ok(Box::new(Game::new(cc))))
     )
 }
