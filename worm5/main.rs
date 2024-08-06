@@ -14,12 +14,14 @@ mod worm;
 use egui::ViewportBuilder;
 use game::Game;
 
-
-
 fn main() -> Result<(), eframe::Error> {
     let options = eframe::NativeOptions {
         viewport: ViewportBuilder::default().with_maximized(true),
         ..Default::default()
     };
-    eframe::run_native("Worm", options, Box::new(|cc| Box::new(Game::new(cc))))
+    eframe::run_native(
+        "Worm",
+        options,
+        Ok(Box::new(|cc| Box::new(Game::new(cc))))
+    )
 }
