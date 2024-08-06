@@ -107,7 +107,12 @@ impl Game {
             }
             if push {
                 let letter: Option<char> = if id < 3 { self.char_stack.pop() } else { None };
-                self.foods.push(  Food { id, position, letter }  );
+                self.foods.push(
+                    Food {
+                        //id,
+                        position, letter
+                    }
+                );
                 id += 1;
             }
         }

@@ -13,7 +13,7 @@ use crate::consts::{
 
 #[derive(Default)]
 pub struct Food {
-    pub id:       usize,        // default: value of 0
+    //pub id:       usize,        // default: value of 0
     pub position: Vec2,         // default: vec2(0.0, 0.0)
     pub letter:   Option<char>, // default: None
 }
