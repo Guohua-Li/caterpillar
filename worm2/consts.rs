@@ -13,14 +13,6 @@ pub enum GameState {
     Exit,
 }
 
-pub const ZOO_ANIMALS: [&str; 54] = [
-  "anteater", "armadillo", "badger", "bat", "bear", "beaver", "bison", "camel", "chameleon", "cheetah",
-  "chimpanzee", "chipmunk", "crocodile", "deer", "elephant", "fox", "frog", "giraffe", "goldfish", "gorilla",
-  "hamster", "hedgehog", "hippopotamus", "hyena", "iguana", "kangaroo", "koala", "leopard", "lion", "lizard",
-  "llama", "monkey", "moose", "mouse", "octopus", "orangutan", "panda", "pangolin", "raccoon", "rhinoceros",
-  "scorpion", "seal", "skunk", "snail", "snake", "spider", "squirrel", "tiger", "toad", "turtle",
-  "walrus", "warthog", "wolf", "zebra",
-];
 
 pub const FRICTION:      f32 = 0.01;
 pub const MAX_FORCE:     f32 = 0.1;

@@ -13,7 +13,7 @@ use ears::{
 
 use crate::consts::{
     GameState,
-    ZOO_ANIMALS,
+    //ZOO_ANIMALS,
     DIAMETER,
     MAX_FORCE,
     ACC_PER_FRAME,
@@ -27,7 +27,7 @@ use crate::worm::Worm;
 pub struct Game {
     paused: bool,
     worm:   Worm,
-    vocabulary: Vec<String>,
+    //vocabulary: Vec<String>,
     word:  String,
     foods: Vec<Food>,
     game_state: GameState,
@@ -38,7 +38,7 @@ impl Default for Game {
         Self {
             paused: false,
             worm:   Worm::default(),
-            vocabulary: ZOO_ANIMALS.iter().map(|s| s.to_string()).collect(),
+            //vocabulary: ZOO_ANIMALS.iter().map(|s| s.to_string()).collect(),
             word:  "moose".to_string(),
             foods: Vec::new(),
             game_state: GameState::StartUI,
