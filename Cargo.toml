@@ -20,7 +20,7 @@ name = "worm5"
 path = "worm5/main.rs"
 
 [dependencies]
-egui   = "0.29.1"
-eframe = "0.29.1"
+egui   = "0.30.0"
+eframe = "0.30.0"
 rand   = "0.8.5"
 ears   = "0.8.0"
