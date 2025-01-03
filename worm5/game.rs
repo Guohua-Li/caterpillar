@@ -584,7 +584,8 @@ pub fn configure_fonts(ctx: &Context) {
     let mut fonts = FontDefinitions::default();
     fonts.font_data.insert(
         "my_font".to_owned(),
-        FontData::from_static(include_bytes!("../fonts/MesloLGS_NF_Regular.ttf"))
+        //FontData::from_static(include_bytes!("../fonts/MesloLGS_NF_Regular.ttf"))
+        Arc::new(FontData::from_static(include_bytes!("../fonts/MesloLGS_NF_Regular.ttf"))),
     );
     fonts.families.get_mut(&FontFamily::Proportional).unwrap().insert(0, "my_font".to_owned());
     fonts.families.get_mut(&FontFamily::Monospace).unwrap().push("my_font".to_owned());
