@@ -1,3 +1,5 @@
+use std::sync::Arc;
+
 use std::thread;
 use rand::Rng;
 
